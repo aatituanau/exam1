@@ -6,6 +6,8 @@ import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import {Outlet, Link} from "react-router-dom";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 export default function Login() {
   return (
@@ -39,9 +41,9 @@ export default function Login() {
           variant="standard"
         />
       </Box>
-      <button component={Link} to="/pokeapi">
-        Login
-      </button>
+      <Button variant="contained" component={Link} to="/pokeapi">
+        Link
+      </Button>
     </>
   );
 }
